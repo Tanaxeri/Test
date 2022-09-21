@@ -11,8 +11,25 @@ namespace Test
         static void Main(string[] args)
         {
 
-            int EgyesEgeszSzam = Convert.ToInt32(Console.ReadLine());
-            int KettesEgeszSzam = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Adja meg az első egész számot!");
+                int EgyesEgeszSzam = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Adja meg a második egész számot!");
+                int KettesEgeszSzam = Convert.ToInt32(Console.ReadLine());
+
+                if (EgyesEgeszSzam > KettesEgeszSzam)
+                {
+
+                    Console.WriteLine($"A {EgyesEgeszSzam} a nagyobb!");
+
+                }
+                else
+                {
+
+                    Console.WriteLine($"A {KettesEgeszSzam} a nagyobb!");
+
+                }
+                
 
             Console.WriteLine("\nProgram vége");
             Console.ReadKey();
